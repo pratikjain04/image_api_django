@@ -1,10 +1,13 @@
 from keras.models import load_model
 import cv2
 from minor.settings import MEDIA_URL
+from django.conf import settings
+import os
 
 class Prediction:
     def cvModel(self):
-        model = load_model('my_model.h5')
+
+        model = load_model(os.path.join(settings.BASE_DIR, 'computervision/my_model.h5'))
 
         # Reading the file in greyscale
         image = cv2.imread(MEDIA_URL + 'Y.jpg', 0)

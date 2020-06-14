@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9535bae-f3af-4e45-b3ef-102d43770329" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/computervision/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/computervision/prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deaf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/deaf/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deaf/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/deaf/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minor/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/minor/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="prediction.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/computervision/prediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="60">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -30,8 +29,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deaf/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +53,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minor/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="108" column="10" lean-forward="true" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
@@ -66,9 +68,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/computervision/views.py" />
-        <option value="$PROJECT_DIR$/minor/settings.py" />
         <option value="$PROJECT_DIR$/deaf/urls.py" />
         <option value="$PROJECT_DIR$/deaf/views.py" />
+        <option value="$PROJECT_DIR$/minor/settings.py" />
         <option value="$PROJECT_DIR$/computervision/prediction.py" />
       </list>
     </option>
@@ -104,21 +106,6 @@
               <item name="image_api_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="image_api_django" type="462c0819:PsiDirectoryNode" />
               <item name="computervision" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="image_api_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="image_api_django" type="462c0819:PsiDirectoryNode" />
-              <item name="deaf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="image_api_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="image_api_django" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="image_api_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="image_api_django" type="462c0819:PsiDirectoryNode" />
-              <item name="minor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,15 +226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/minor/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="108" column="10" lean-forward="true" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deaf/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="375">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
@@ -261,10 +241,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deaf/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/computervision/prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
