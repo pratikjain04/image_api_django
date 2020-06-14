@@ -119,6 +119,7 @@ REST_FRAMEWORK = {
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
+MEDIA_URL = '/media/'
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
