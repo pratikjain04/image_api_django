@@ -1,7 +1,6 @@
 import cv2
 from keras.models import load_model
 from rest_framework import generics
-from minor.settings import MEDIA_URL
 from .models import ImageUploadModel
 from .serializer import FileSerializer
 from computervision.prediction import Prediction
@@ -13,5 +12,5 @@ class FileUploadView(generics.GenericAPIView):
     serializer_class = FileSerializer
 
     def post(self, request):
-        response = Prediction.cvModel(MEDIA_URL)
+        response = Prediction.cvModel(self)
         return HttpResponse(response);
