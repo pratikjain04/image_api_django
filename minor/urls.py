@@ -22,7 +22,7 @@ from rest_framework import routers, serializers, viewsets
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('upload/', include('deaf.urls')),
+    path('', include('deaf.urls'))
 
 ]
 
