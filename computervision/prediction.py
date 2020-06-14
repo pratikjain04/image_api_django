@@ -1,16 +1,27 @@
 from keras.models import load_model
 import cv2
-from minor.settings import MEDIA_URL
+
 from django.conf import settings
 import os
+from PIL import Image
+import requests
+import urllib
+from urllib import request
+
 
 class Prediction:
-    def cvModel(self):
+
+    # the url will be the firebase url
+    def cvModel(self, url):
 
         model = load_model(os.path.join(settings.BASE_DIR, 'computervision/my_model.h5'))
 
         # Reading the file in greyscale
         image = cv2.imread(os.path.join(settings.BASE_DIR, 'computervision/Y.jpg'), 0)
+
+        # url = "firebase url"
+
+        image = Image.open(request.urlopen(url))
 
         # Resizing the image according to the dimensions the network is trained on
         resized_image = cv2.resize(image, (28, 28))
@@ -22,7 +33,8 @@ class Prediction:
         pred = model.predict(resized_image)
 
         # Converting the predicted list of numbers to the alphabet
-        l = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W",
+        l = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
+             "W",
              "X", "Y"]
 
         # The final alphabet is stored in variable output
@@ -33,4 +45,3 @@ class Prediction:
                 exit
 
         return output
-
