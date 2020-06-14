@@ -5,6 +5,8 @@ from .models import ImageUploadModel
 from .serializer import FileSerializer
 from computervision.prediction import Prediction
 from django.shortcuts import HttpResponse
+from django import http
+
 
 class FileUploadView(generics.GenericAPIView):
 
@@ -13,4 +15,4 @@ class FileUploadView(generics.GenericAPIView):
 
     def post(self, request):
         response = Prediction.cvModel(self)
-        return HttpResponse(response);
+        return http.JsonResponse(response, safe=False)

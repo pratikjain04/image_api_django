@@ -10,7 +10,7 @@ class Prediction:
         model = load_model(os.path.join(settings.BASE_DIR, 'computervision/my_model.h5'))
 
         # Reading the file in greyscale
-        image = cv2.imread(MEDIA_URL + 'Y.jpg', 0)
+        image = cv2.imread(os.path.join(settings.BASE_DIR, 'computervision/Y.jpg'), 0)
 
         # Resizing the image according to the dimensions the network is trained on
         resized_image = cv2.resize(image, (28, 28))
